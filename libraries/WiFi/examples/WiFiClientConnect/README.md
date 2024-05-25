@@ -1,4 +1,4 @@
-# NetworkClientConnect Example
+# WiFiClientConnect Example
 
 This example demonstrates how to connect to the WiFi and manage the status and disconnection from STA.
 

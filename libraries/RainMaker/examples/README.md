@@ -10,3 +10,4 @@ While building any examples for ESP RainMaker, take care of the following:
     - ESP32-S3 Board: BLE Provisioning
     - ESP32-S2 Board: SoftAP Provisioning
 4. Set debug level to Info (Tools -> Core Debug Level -> Info). This is recommended debug level but not mandatory to run RainMaker.
+

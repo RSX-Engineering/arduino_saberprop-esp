@@ -26,7 +26,7 @@ WPS Timedout, retrying
 WPS Timedout, retrying
 ```
 
-#### WPS Push Button Successful
+#### WPS Push Button Successfull
 
 ```
 ets Jun  8 2016 00:22:57
@@ -46,7 +46,7 @@ entry 0x40078a14
 
 Starting WPS
 Station Mode Started
-WPS Successful, stopping WPS and connecting to: < Your Router SSID >
+WPS Successfull, stopping WPS and connecting to: < Your Router SSID >
 Disconnected from station, attempting reconnection
 Connected to : < Your Router SSID >
 Got IP: 192.168.1.100
@@ -79,7 +79,7 @@ WPS Timedout, retrying
 WPS_PIN = 71321622
 ```
 
-#### WPS PIN Successful
+#### WPS PIN Successfull
 
 ```
 ets Jun  8 2016 00:22:57
@@ -97,7 +97,7 @@ entry 0x40078a14
 Starting WPS
 Station Mode Started
 WPS_PIN = 36807581
-WPS Successful, stopping WPS and connecting to: <Your Router SSID>
+WPS Successfull, stopping WPS and connecting to: <Your Router SSID>
 Disconnected from station, attempting reconnection
 Connected to :<Your Router SSID>
 Got IP: 192.168.1.100

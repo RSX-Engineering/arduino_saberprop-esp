@@ -1,4 +1,13 @@
-# Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2
+# Installing Arduino Plugin for SaberProp
+1. Open Arduino, go to 'Preferences' and add the following Board Manager URL: https://espressif.github.io/arduino-esp32/package_esp32_index.json
+2. Go to 'Boards Manager' and install the 'esp32' version 2.0.17
+3. Go to Arduino package location ...\Arduino15\packages\esp32\hardware\esp32, backup and remove the installed version (folder 2.0.17)
+4. Clone this repository in the esp32 folder:git clone https://github.com/RSX-Engineering/arduino_saberprop-esp 2.0.17
+5. Download the [ProffieOSxs source code]() and open ProffieOS.ino
+6. Select the 'SaberProp' board in Ardunio     
+7. Verify and upload as usual.
+
+## Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2
 
 ![Build Status](https://github.com/espressif/arduino-esp32/workflows/ESP32%20Arduino%20CI/badge.svg) [![External Libraries Test](https://github.com/espressif/arduino-esp32/actions/workflows/lib.yml/badge.svg?branch=master&event=schedule)](https://github.com/espressif/arduino-esp32/blob/gh-pages/LIBRARIES_TEST.md) [![Hardware Tests](https://github.com/espressif/arduino-esp32/actions/workflows/hil.yml/badge.svg?branch=master&event=schedule)](https://github.com/espressif/arduino-esp32/actions/workflows/hil.yml?query=event%3Aschedule)
 
@@ -6,13 +15,18 @@
 
 ## Contents
 
-  - [Development Status](#development-status)
-  - [Development Planning](#development-planning)
-  - [Documentation](#documentation)
-  - [Supported Chips](#supported-chips)
-  - [Decoding exceptions](#decoding-exceptions)
-  - [Issue/Bug report template](#issuebug-report-template)
-  - [Contributing](#contributing)
+- [Installing Arduino Plugin for SaberProp](#installing-arduino-plugin-for-saberprop)
+  - [Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2](#arduino-core-for-the-esp32-esp32-s2-esp32-s3-esp32-c3-esp32-c6-and-esp32-h2)
+    - [Need help or have a question? Join the chat at Gitter or open a new Discussion](#need-help-or-have-a-question-join-the-chat-at-gitter-or-open-a-new-discussion)
+  - [Contents](#contents)
+    - [Development Status](#development-status)
+    - [Development Planning](#development-planning)
+    - [Documentation](#documentation)
+    - [Supported Chips](#supported-chips)
+    - [Decoding exceptions](#decoding-exceptions)
+    - [Issue/Bug report template](#issuebug-report-template)
+    - [External libraries compilation test](#external-libraries-compilation-test)
+    - [Contributing](#contributing)
 
 ### Development Status
 

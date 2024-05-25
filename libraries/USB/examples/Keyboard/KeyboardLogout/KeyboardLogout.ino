@@ -24,17 +24,15 @@
 
   http://www.arduino.cc/en/Tutorial/KeyboardLogout
 */
-#ifndef ARDUINO_USB_MODE
-#error This ESP32 SoC has no Native USB interface
-#elif ARDUINO_USB_MODE == 1
+#if ARDUINO_USB_MODE
 #warning This sketch should be used when USB is in OTG mode
-void setup() {}
-void loop() {}
+void setup(){}
+void loop(){}
 #else
 
-#define OSX     0
+#define OSX 0
 #define WINDOWS 1
-#define UBUNTU  2
+#define UBUNTU 2
 
 #include "USB.h"
 #include "USBHIDKeyboard.h"
@@ -43,18 +41,16 @@ USBHIDKeyboard Keyboard;
 // change this to match your platform:
 int platform = OSX;
 
-const int buttonPin = 0;  // input pin for pushbutton
-
 void setup() {
   // make pin 0 an input and turn on the pull-up resistor so it goes high unless
   // connected to ground:
-  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(0, INPUT_PULLUP);
   Keyboard.begin();
   USB.begin();
 }
 
 void loop() {
-  while (digitalRead(buttonPin) == HIGH) {
+  while (digitalRead(0) == HIGH) {
     // do nothing until pin 2 goes low
     delay(500);
   }
@@ -97,8 +93,6 @@ void loop() {
   }
 
   // do nothing:
-  while (true) {
-    delay(1000);
-  }
+  while (true) delay(1000);
 }
 #endif /* ARDUINO_USB_MODE */
